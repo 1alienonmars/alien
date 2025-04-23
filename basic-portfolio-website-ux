@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anny B. | Portfólio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #ffffff;
+      color: #111;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      padding: 20px 40px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 140px 40px 60px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .project-title {
+      padding: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div><strong>Seu Nome</strong></div>
+      <div>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Olá, sou [Anny B.]!</h1>
+    <p>UX/UI Designer focada em criar experiências digitais simples, acessíveis e encantadoras.</p>
+  </section>
+
+  <section class="projects" id="projetos">
+    <div class="project">
+      <img src="https://via.placeholder.com/600x400" alt="Projeto 1"/>
+      <div class="project-title">Projeto 1</div>
+    </div>
+    <div class="project">
+      <img src="https://via.placeholder.com/600x400" alt="Projeto 2"/>
+      <div class="project-title">Projeto 2</div>
+    </div>
+    <div class="project">
+      <img src="https://via.placeholder.com/600x400" alt="Projeto 3"/>
+      <div class="project-title">Projeto 3</div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>© 2025 • Feito com ♥ por [Anny B.]</p>
+  </footer>
+
+</body>
+</html>
